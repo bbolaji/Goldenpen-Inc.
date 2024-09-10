@@ -81,7 +81,7 @@
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #00B4D8; /* Deep Blue */
+    background-color:#000080; /* Deep Blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -90,7 +90,7 @@
 }
 
 .cta-button:hover {
-    background-color: #0077B6; /* Deep Blue */
+    background-color: #000080; /* Deep Blue */
 }
 
 /* Responsive Menu Button for Mobile */
