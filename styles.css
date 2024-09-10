@@ -18,9 +18,10 @@ a {
 
 /* Header Section */
 .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 128, 0.7), rgba(0, 0, 128, 0.7)), url('header-bg.jpg') center/cover no-repeat;
     height: 100vh;
-    color: #fff;
+    color: #ffffff; /* White text in the header */
+}
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,31 +282,65 @@ form input {
         font-size: 0.9rem;
     }
 }
-/* Gallery styling */
-.image-gallery {
-    text-align: center;
-    margin: 20px 0;
+/* Global Image Styling (including logo) */
+img {
+    max-width: 100%;  /* Ensures image doesn't exceed the container */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Ensures no extra space around the image */
 }
 
-.templates {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Logo Specific Styling */
+.logo img {
+    width: 150px;      /* Initial size for the logo */
+    transition: transform 0.3s ease-in-out; /* Animation for smooth scaling */
 }
 
-.template-img {
-    margin: 10px;
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarges logo on hover */
 }
 
-/* Make the images responsive for smaller screens */
+/* About Section Image */
+.about-content img {
+    width: 300px;      /* Default image size for larger screens */
+    transition: transform 0.3s ease-in-out, opacity 0.3s; /* Animation */
+    opacity: 0.9;      /* Slight opacity for a soft effect */
+}
+
+.about-content img:hover {
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+    opacity: 1; /* Fully opaque on hover */
+}
+
+/* Responsive adjustments for images */
 @media (max-width: 768px) {
-    .template-img {
-        width: 100%;
-        max-width: 300px;
+    .logo img {
+        width: 120px; /* Adjusted logo size for tablets */
     }
+
+    .about-content img {
+        width: 250px; /* Adjust image size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 100px; /* Adjusted logo size for mobile devices */
+    }
+
+    .about-content img {
+        width: 200px; /* Adjust image size for mobile */
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+img {
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in effect to all images */
 }
 
