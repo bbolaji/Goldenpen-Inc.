@@ -81,7 +81,7 @@
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #00B4D8; /* Cloud Blue */
+    background-color: #00B4D8; /* Deep Blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -150,7 +150,7 @@ cta-button {
     width: 100%;
     max-width: 600px; /* Maximum width for larger screens */
     height: auto;
-    border: 2px solid #87CEEB; /* Cloud blue border */
+    border: 2px solid #000080; /* Deep Blue border */
     border-radius: 8px;
     animation: moveImage 2s ease-in-out forwards;
 }
@@ -183,13 +183,13 @@ cta-button {
     text-decoration: none;
     color: #333;
     padding: 5px;
-    border: 1px solid #87CEEB;
+    border: 1px solid  #000080;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 .social-links a:hover {
-    background-color: #87CEEB;
+    background-color:  #000080;
 }
 
 .social-links i {
@@ -281,7 +281,7 @@ cta-button {
 }
 
 .service {
-    background-color: #00B4D8;
+    background-color: #000080; /* Deep Blue background */;
     color: white;
     padding: 20px; /* Reduced padding */
     border-radius: 10px;
@@ -340,7 +340,7 @@ form input {
 
 .submit-btn {
     padding: 10px 25px; /* Reduced padding */
-    background-color: #00B4D8;
+    background-color: #000080; /* Deep Blue background */;
     color: white;
     border: none;
     border-radius: 5px;
