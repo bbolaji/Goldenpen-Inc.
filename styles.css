@@ -160,24 +160,24 @@ cta-button {
     padding: 20px;
 }
 
-.gallery {
+.Template gallery {
     flex: 1;
     padding: 20px;
 }
 
-.gallery h2 {
+.Template gallery h2 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.gallery-images {
+.Template gallery-images {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Space between images */
     justify-content: center; /* Center images horizontally */
 }
 
-.gallery-images img {
+.Template gallery-images img {
     width: 100px; /* Smaller image width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure images don't get distorted */
@@ -186,14 +186,14 @@ cta-button {
     transition: transform 0.3s ease-in-out; /* Optional: Smooth scaling effect */
 }
 
-.gallery-images img:hover {
+.Template gallery-images img:hover {
     transform: scale(4.3); /* Optional: enlarge image on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack the navbar items vertically on smaller screens */
+        flex-direction: column; /* Stack the navbar items horizontally on smaller screens */
     }
 
     nav ul li {
