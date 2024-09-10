@@ -6,16 +6,18 @@
     padding: 20px 100px;
     background-color: #000080; /* Deep Blue */
     color: white;
+    position: relative;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px; /* Adds space between nav links */
+    gap: 15px; /* Adjusted gap to reduce spacing between links */
+    margin-left: auto; /* Moves the nav links to the far right */
 }
 
 .nav-links li {
-    margin-left: 20px;
+    padding: 0 15px;
 }
 
 .nav-links a {
@@ -23,6 +25,39 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.menu-button {
+    display: none; /* Hide menu button on larger screens */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Menu Button for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Below the navbar */
+        right: 0;
+        background-color: #000080; /* Deep Blue */
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+    }
+
+    .menu-button {
+        display: block; /* Show menu button on mobile */
+    }
+
+    .navbar.open .nav-links {
+        display: flex; /* Show menu links when opened */
+    }
+}
+
 
 .menu-button {
     display: none; /* Hide menu button on larger screens */
@@ -226,54 +261,7 @@ cta-button {
         padding: 10px;
     }
 
-    #contact-us {
-        flex-direction: column;
-    }
-
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .Template gallery-images {
-        flex-direction: column;
-    }
-
-    .Template gallery-images img {
-        width: 80px; /* Smaller image width on smaller screens */
-        max-width: 100%; /* Ensure the images do not exceed the container width */
-    }
-
-    .responsive-image {
-        max-width: 90%; /* Ensure the image fits within the container on smaller screens */
-        margin: 0 auto; /* Center the image */
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul li a {
-        padding: 8px;
-    }
-
-    section {
-        margin: 2px;
-        padding: 5px;
-    }
-
-    footer {
-        padding: 5px;
-        font-size: 12px; /* Smaller text for footer */
-    }
-
-    .Template gallery-images img {
-        width: 60px; /* Further reduce image size for very small screens */
-        max-width: 100%; /* Ensure the images do not exceed the container width */
-    }
-
-    .responsive-image {
-        max-width: 100%; /* Ensure the image fits within the container on very small screens */
-        margin: 0 auto; /* Center the image */
-    }
-}
+    
 /* Services Section */
 .services {
     padding: 40px 20px; /* Reduced padding for smaller screens */
