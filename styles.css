@@ -243,7 +243,7 @@ cta-button {
         font-size: 12px; /* Smaller text for footer */
     }
 
-    .gallery-images img {
+    .Template gallery-images img {
         width: 60px; /* Further reduce image size for very small screens */
         max-width: 100%; /* Ensure the images do not exceed the container width */
     }
@@ -293,10 +293,6 @@ cta-button {
 .service:hover {
     transform: scale(1.05);
 }
-
-
-
-
 
 /* Upload Resume Section */
 .upload {
