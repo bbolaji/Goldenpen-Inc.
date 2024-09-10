@@ -175,18 +175,14 @@ cta-button {
         width: 100%; /* Full width images on mobile devices */
     }
 }
-
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Stack the navbar items horizontally on smaller screens */
     }
-
     nav ul li {
         text-align: center; /* Center align navbar items */
     }
-
     section {
         margin: 5px;
         padding: 10px;
