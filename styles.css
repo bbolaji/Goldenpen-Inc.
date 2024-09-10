@@ -141,54 +141,41 @@ cta-button {
         align-items: center;
     }
 }
-/* Contact Us Section */
-#contact-us {
+/*Template Gallery Section */
+.gallery {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
     padding: 20px;
-    background-color: #f9f9f9; /* Light background color for contrast */
+    gap: 20px; /* Adds space between images */
 }
 
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+/* Individual Image Styling */
+.gallery img {
+    width: 30%; /* Images take up 30% of the container width for larger screens */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling animation */
 }
 
-.contact-info {
-    flex: 1;
-    padding: 20px;
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-.Template gallery {
-    flex: 1;
-    padding: 20px;
+/* Responsive Styling for Tablets */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 45%; /* Images take up more space on smaller screens */
+    }
 }
 
-.Template gallery h2 {
-    text-align: center;
-    margin-bottom: 10px;
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%; /* Full width images on mobile devices */
+    }
 }
 
-.Template gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Space between images */
-    justify-content: center; /* Center images horizontally */
-}
-
-.Template gallery-images img {
-    width: 100px; /* Smaller image width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images don't get distorted */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
-    transition: transform 0.3s ease-in-out; /* Optional: Smooth scaling effect */
-}
-
-.Template gallery-images img:hover {
-    transform: scale(4.3); /* Optional: enlarge image on hover */
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -338,6 +325,41 @@ form input {
     cursor: pointer;
     font-size: 1rem;
 }
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+    padding: 20px;
+    gap: 20px; /* Adds space between images */
+}
+
+/* Individual Image Styling */
+.gallery img {
+    width: 30%; /* Images take up 30% of the container width for larger screens */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling animation */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Styling for Tablets */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 45%; /* Images take up more space on smaller screens */
+    }
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%; /* Full width images on mobile devices */
+    }
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
