@@ -1,40 +1,78 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #87CEEB; /*  blue background */
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Navbar styling */
+.navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #000080; /* Deep Blue */
+    color: white;
 }
 
-nav ul li {
-    display: inline;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adds space between nav links */
 }
 
-nav ul li a {
-    color: #fff;
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
     text-decoration: none;
-    padding: 10px;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #575757;
+.menu-button {
+    display: none; /* Hide menu button on larger screens */
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
+/* Write-up Section on the right */
+.header-write-up {
+    margin-left: auto; /* Push the write-up to the far right */
+    padding-left: 20px;
+    color: white;
+    max-width: 250px;
+}
+
+/* Header content */
+.header-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #00B4D8; /* Cloud Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0077B6; /* Deep Blue */
+}
+
+/* Responsive Menu Button for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on mobile */
+    }
+
+    .menu-button {
+        display: block; /* Show menu button on mobile */
+    }
+
+    .header-write-up {
+        display: none; /* Hide write-up on smaller screens to reduce clutter */
+    }
+}
+
 
 /* Section Styles */
 section {
