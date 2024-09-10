@@ -281,3 +281,31 @@ form input {
         font-size: 0.9rem;
     }
 }
+/* Gallery styling */
+.image-gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.templates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.template-img {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the images responsive for smaller screens */
+@media (max-width: 768px) {
+    .template-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
